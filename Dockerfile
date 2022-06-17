@@ -2,8 +2,7 @@
 FROM python:alpine3.16
 
 # set the working directory in the container
-WORKDIR /Users/sambo/Documents/GitHub/TP3-Cedric-SAMBOUN
-
+WORKDIR /app
 
 
 # copy the dependencies file to the working directory
@@ -16,4 +15,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 #CMD ["flask", "run", "--host", "0.0.0.0:8081"]
 
 COPY ..
+
 CMD [ "python3", "./app.py" ]
