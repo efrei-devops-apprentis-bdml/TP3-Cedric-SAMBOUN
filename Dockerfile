@@ -1,4 +1,3 @@
-
 FROM python:alpine3.16
 
 # set the working directory in the container
@@ -13,7 +12,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # command to run on container start
 #CMD ["flask", "run", "--host", "0.0.0.0:8081"]
-
-COPY ..
+COPY . .
 
 CMD [ "python3", "./app.py" ]
