@@ -2,7 +2,7 @@
 FROM python:alpine3.16
 
 # set the working directory in the container
-WORKDIR /app
+WORKDIR /Users/sambo/Documents/GitHub/TP3-Cedric-SAMBOUN
 
 
 
